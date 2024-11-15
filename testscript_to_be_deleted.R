@@ -78,6 +78,7 @@ cran_test <- readRDS("shapr_shapviz_cran_test.rds")
 gh_test <- readRDS("shapr_shapviz_GH_test.rds")
 
 all.equal(cran_test$shp,gh_test$shp) # Differences in the compued Shapley values
+# TRUE
 
 cran_test$explanation$dt
 gh_test$explanation$shapley_values_est
@@ -157,6 +158,7 @@ cran_test$explanation$dt
 gh_test$explanation$shapley_values_est
 
 all.equal(cran_test$shp,gh_test$shp)
+# TRUE
 
 vdiffr::write_svg(cran_test$sv_dep, "sv_dep_cran.svg")
 vdiffr::write_svg(gh_test$sv_dep, "sv_dep_gh.svg")
