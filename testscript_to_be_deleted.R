@@ -45,7 +45,7 @@ saveRDS(list(fit = fit,
 
 #library(shapr)
 remotes::install_github("NorskRegnesentral/shapr")
-remotes::install_github("martinju/shapviz")
+#remotes::install_github("martinju/shapviz",ref = "fix_new_shapr_PR")
 
 library(shapr)
 library(shapviz)
@@ -123,7 +123,7 @@ saveRDS(list(fit = fit,
 
 #library(shapr)
 remotes::install_github("NorskRegnesentral/shapr")
-#remotes::install_github("martinju/shapviz")
+#remotes::install_github("martinju/shapviz",ref = "fix_new_shapr_PR")
 
 library(shapr)
 library(shapviz)
